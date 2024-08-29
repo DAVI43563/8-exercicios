@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Styling</title>
+    <style>
+        input:valid {
+            border-color: green; /* Estiliza campos válidos */
+        }
+        input:invalid {
+            border-color: red; /* Estiliza campos inválidos */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

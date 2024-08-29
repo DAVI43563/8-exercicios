@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enabled and Disabled Styling</title>
+    <style>
+        input:enabled {
+            background-color: lightgreen; /* Estiliza campos habilitados */
+        }
+        input:disabled {
+            background-color: lightgray; /* Estiliza campos desabilitados */
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="enabledField">Enabled Field:</label>
+        <input type="text" id="enabledField" name="enabledField">
+        <br>
+        <label for="disabledField">Disabled Field:</label>
+        <input type="text" id="disabledField" name="disabledField" disabled>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
